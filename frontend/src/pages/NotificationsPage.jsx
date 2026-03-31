@@ -61,9 +61,11 @@ const NotificationsPage = () => {
                                 <span className="badge badge-secondary badge-sm">
                                   Native: {request.sender.nativeLanguage}
                                 </span>
-                                <span className="badge badge-outline badge-sm">
-                                  Learning: {request.sender.learningLanguage}
-                                </span>
+                                {request.sender.age && (
+                                  <span className="badge badge-outline badge-sm">
+                                    Age: {request.sender.age}
+                                  </span>
+                                )}
                               </div>
                             </div>
                           </div>
