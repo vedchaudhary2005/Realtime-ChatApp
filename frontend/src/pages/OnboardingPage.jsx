@@ -14,7 +14,7 @@ const OnboardingPage = () => {
     fullName: authUser?.fullName || "",
     bio: authUser?.bio || "",
     nativeLanguage: authUser?.nativeLanguage || "",
-    learningLanguage: authUser?.learningLanguage || "",
+    age: authUser?.age || "",
     location: authUser?.location || "",
     profilePic: authUser?.profilePic || "",
   });
@@ -107,7 +107,7 @@ const OnboardingPage = () => {
               />
             </div>
 
-            {/* LANGUAGES */}
+            {/* NATIVE LANGUAGE & AGE */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* NATIVE LANGUAGE */}
               <div className="form-control">
@@ -129,24 +129,21 @@ const OnboardingPage = () => {
                 </select>
               </div>
 
-              {/* LEARNING LANGUAGE */}
+              {/* AGE */}
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Learning Language</span>
+                  <span className="label-text">Age</span>
                 </label>
-                <select
-                  name="learningLanguage"
-                  value={formState.learningLanguage}
-                  onChange={(e) => setFormState({ ...formState, learningLanguage: e.target.value })}
-                  className="select select-bordered w-full"
-                >
-                  <option value="">Select language you're learning</option>
-                  {LANGUAGES.map((lang) => (
-                    <option key={`learning-${lang}`} value={lang.toLowerCase()}>
-                      {lang}
-                    </option>
-                  ))}
-                </select>
+                <input
+                  type="number"
+                  name="age"
+                  value={formState.age}
+                  onChange={(e) => setFormState({ ...formState, age: e.target.value })}
+                  className="input input-bordered w-full"
+                  placeholder="Your age"
+                  min="1"
+                  max="120"
+                />
               </div>
             </div>
 

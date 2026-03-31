@@ -46,7 +46,7 @@ const {isPending, error, signupMutation} = useSignup();
                 <div>
                   <h2 className="text-xl font-semibold">Create an Account</h2>
                   <p className="text-sm opacity-70">
-                    Join Chatify and start your Conversation
+                    Join Chat and start your Conversation
                   </p>
                 </div>
                 <div className="space-y-3">
@@ -137,9 +137,10 @@ const {isPending, error, signupMutation} = useSignup();
           </div>
 
           <div className="text-center space-y-3 mt-6">
-            <h2 className="text-xl font-semibold">Connect With Language partners worldwide</h2>
+            <h2 className="text-xl font-semibold">Connect with people worldwide</h2>
             <p className="opacity-70">
-              Practice Conversation, make friends, and improve your Language skills Together
+                            Talk, connect, and make new friends together
+
             </p>
           </div>
 

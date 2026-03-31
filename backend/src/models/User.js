@@ -29,9 +29,9 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    learningLanguage: {
-      type: String,
-      default: "",
+    age: {
+      type: Number,
+      default: null,
     },
     location: {
       type: String,

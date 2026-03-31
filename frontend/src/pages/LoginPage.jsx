@@ -121,9 +121,9 @@ const {isPending, error, loginMutation} = useLogin();
           </div>
 
           <div className="text-center space-y-3 mt-6">
-            <h2 className="text-xl font-semibold">Connect With Language partners worldwide</h2>
+            <h2 className="text-xl font-semibold">Connect with people worldwide</h2>
             <p className="opacity-70">
-              Practice Conversation, make friends, and improve your Language skills Together
+              Talk, connect, and make new friends together
             </p>
           </div>
 
